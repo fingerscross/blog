@@ -1,0 +1,60 @@
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  config: "charset=utf8mb4&parseTime=True&loc=Local"
+  db: gvb_db
+  user: root
+  password: "20000620"
+  log_level: dev
+logger:
+  level: info
+  prefix: '[gin_project]'
+  director: log
+  show_line: true
+  log_in_console: true
+system:
+  host: 0.0.0.0
+  port: 8080
+  env: release
+upload:
+  size: 4
+  path: uploads/file
+site_info:
+  created_at: "2023-09-11"
+  title: 博客
+  eamil: gu18915702696@163.com
+jwt:
+  secret: xxx
+  expires: 48
+  issuer: xx
+qq:
+  app_id: 102073911
+  key: V2d5mKejZ9Ug05vW
+  redirect: http://xx.xx.com/login?flag=qq
+qi_niu:
+  enable: true
+  access_key: KPd-NDj-OrKXdAFvl4tvwbV-v9uz-2OpU_8YWTWm
+  secret_key: Uou52gIQj1njB9P-QcgXyU0uqPhUFAXJ3PiogoHL
+  bucket: gylblog
+  cdn: s3whwbyrj.hb-bkt.clouddn.com
+  zone: z1
+  size: 5
+  prefix: "gvb"
+email:
+  host: smtp.163.com
+  port: 465
+  user: gu18915702696@163.com
+  password: BKZQNBRSPXSSYKNR
+  default_from_email: gu18915702696@163.com
+  use-ssl: true
+  user-tls: true
+redis:
+  ip: 127.0.0.1
+  port: 6379
+  password:
+  pool_size: 100
+es:
+  host: "http://119.3.170.200"
+  port: 9200
+  user:
+  password:
